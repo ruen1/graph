@@ -1,0 +1,33 @@
+address = "127.0.0.1"
+port = 8000
+
+[limits]
+file = "10 MiB"
+data-form = "10 MiB"
+form = "128 KiB"
+string = "128 KiB"
+title_max_chars = 256
+author_name_max_chars = 128
+author_url_max_chars = 512
+content_max_bytes = 128_000
+
+[backend]
+database = "telegraph.db"
+base_url = "http://localhost:8000"
+upload_dir = "uploads"
+wal_checkpoint_interval_secs = 30 # merges into the main sqlite database
+upload_cleanup_interval_secs = 60
+upload_max_age_secs = 86400
+session_max_age_days = 30 # cleans up old sessions
+orphaned_account_cleanup_hours = 24 # cleans up unused accounts for improve privacy
+
+[frontend]
+upload_enabled = true
+editable = true
+report_enabled = true
+name = "Graph"
+description = "Graph is a minimalist publishing tool that allows you to create richly formatted posts and push them to the Web in just a click."
+
+[privacy]
+strip_exif = true # removes EXIF data from uploads
+strip_utm = true # removes 'utm' and other trackers from links

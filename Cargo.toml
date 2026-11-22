@@ -1,0 +1,32 @@
+[package]
+name = "telegraph"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.8", features = ["multipart"] }
+axum-extra = { version = "0.10", features = ["cookie"] }
+chrono = { version = "0.4", features = ["clock"] }
+crossterm = "0.28"
+deunicode = "1"
+env_logger = "0.11"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "gif", "webp"] }
+log = "0.4"
+sha2 = "0.11"
+mime_guess = "2"
+rand = "0.8"
+ratatui = "0.29"
+rusqlite = { version = "0.38", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+toml = "0.8"
+tower-http = { version = "0.6", features = ["compression-gzip", "fs"] }
+ubyte = { version = "0.10", features = ["serde"] }
+url = "2"
+
+[dev-dependencies]
+http-body-util = "0.1"
+serde_urlencoded = "0.7"
+tempfile = "3"
+tower = { version = "0.5", features = ["util"] }

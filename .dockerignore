@@ -1,0 +1,10 @@
+.git
+.gitignore
+graph
+telegraph.db*
+uploads
+target/*
+!target/release/
+target/release/*
+!target/release/graph
+*.log
