@@ -15,10 +15,11 @@ ENV TELEGRAPH_CONFIG=/graph/Config.toml \
     TELEGRAPH_DATABASE=/graph/telegraph.db \
     TELEGRAPH_UPLOAD_DIR=/graph/uploads \
     ROCKET_ADDRESS=0.0.0.0 \
-    ROCKET_PORT=8000
+    ROCKET_PORT=8000 \
+    PUID=1000 \
+    PGID=1000
 
 VOLUME ["/graph"]
-USER 1000:1000
 EXPOSE 8000
 
 ENTRYPOINT ["/opt/graph/entrypoint.sh"]

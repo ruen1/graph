@@ -14,3 +14,12 @@ Benefits over telegra.ph:
 
 ## Admin interface (terminal)
 <img width="1909" height="1023" alt="Admin terminal user interface" src="https://github.com/user-attachments/assets/58106e27-98aa-4af3-a40d-af839f5d1532" />
+
+```
+mkdir -p graph
+docker run -d \
+  --name telegraph \
+  -p 8000:8000 \
+  -v "$PWD/graph:/graph" \
+  ghcr.io/ruen1/graph:latest
+```
