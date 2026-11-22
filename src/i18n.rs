@@ -224,6 +224,8 @@ mod tests {
             "author_placeholder",
             "your_name_placeholder",
             "content_placeholder",
+            "homepage_javascript_notice",
+            "source_code",
         ] {
             assert!(catalog.languages["en"].contains_key(key), "missing {key}");
         }

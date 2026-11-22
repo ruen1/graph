@@ -37,6 +37,8 @@ network_error = "Network error"
 file_too_big = "File too big (up to 5 MB allowed)"
 report_sent = "Report sent"
 report_sent_body = "Moderators will review your report. Thank you!"
+homepage_javascript_notice = "Enable JavaScript to create pages. You don't need it to read the pages."
+source_code = "Source code"
 
 [ru]
 publish = "Отправить" # Less formal due to length lol
@@ -77,3 +79,6 @@ network_error = "Ошибка сети"
 file_too_big = "Файл слишком большой (до 5 МБ)"
 report_sent = "Жалоба отправлена"
 report_sent_body = "Модераторы рассмотрят жалобу. Спасибо!"
+
+homepage_javascript_notice = "Включите JavaScript, чтобы создавать страницы. Для чтения он не нужен."
+source_code = "Исходный код"

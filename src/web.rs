@@ -1314,6 +1314,13 @@ mod i18n_tests {
         assert!(html.contains("data-placeholder=\"Your name\""));
         assert!(html.contains("data-label=\"Author\""));
         assert!(html.contains("data-placeholder=\"Your story…\""));
+        assert!(html.contains("<noscript>"));
+        assert!(html.contains("JavaScript is disabled or could not be loaded."));
+        assert!(html.contains(
+            "class=\"button publish_button\" href=\"https://github.com/ruen1/graph\">Source code</a>"
+        ));
+        assert!(!html.contains("{{homepage_javascript_notice}}"));
+        assert!(!html.contains("{{source_code}}"));
         assert!(!html.contains("window.TELEGRAPH_STRINGS"));
         assert!(!html.contains("{{template_strings}}"));
         assert!(!html.contains("{{publish}}"));
@@ -1333,6 +1340,8 @@ mod i18n_tests {
         assert!(html.contains("data-placeholder=\"Ваше имя\""));
         assert!(html.contains("data-label=\"Автор\""));
         assert!(html.contains("data-placeholder=\"Ваша история…\""));
+        assert!(html.contains("JavaScript отключен или не загрузился."));
+        assert!(html.contains(">Исходный код</a>"));
         assert!(!html.contains("window.TELEGRAPH_STRINGS"));
 
         let javascript = request(

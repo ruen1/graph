@@ -212,3 +212,6 @@ body.mobile .button_hover{display:none}
 .tl_textfield:focus::-webkit-input-placeholder{opacity:.5}
 .tl_textfield:focus::-moz-placeholder{opacity:.5}
 .tl_textfield:focus:-ms-input-placeholder{opacity:.5}
+
+.noscript_home{max-width:520px;margin:60px auto;padding:0 21px;text-align:center;font-family:CustomSansSerif,'Lucida Grande',Arial,sans-serif;font-size:17px;line-height:1.58;color:#79828B}
+.noscript_home p{margin:0 0 21px}
