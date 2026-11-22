@@ -4,6 +4,3 @@
 /*.tar.gz
 *.log
 .DS_Store
-Cargo.lock
-Cargo.lock
-*.lock
