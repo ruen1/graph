@@ -165,7 +165,7 @@ mod tests {
         assert!(config.privacy.strip_exif);
         assert!(config.privacy.strip_utm);
         assert_eq!(config.backend.orphaned_account_cleanup_hours, 24);
-        assert_eq!(config.frontend.name, "Telegraph");
+        assert_eq!(config.frontend.name, "Graph");
         assert!(
             config
                 .frontend
